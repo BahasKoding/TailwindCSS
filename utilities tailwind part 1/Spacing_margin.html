@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          spacing: {
+            '5px': '5px',
+          }
+        }
+      }
+    }
+  </script>
+  <title>Belajar TailwindCSS</title>
+  <style type="text/tailwindcss">
+    * {
+      border: 1px solid red;
+    }
+  </style>
+
+</head>
+<body>
+  <section name="teori">
+    <h2 class="text-4xl font-bold mb-2">A. Spacing</h2>
+    <h3 class="text-2xl font-semibold">1. Teori Margin</h3>
+      <br>
+      <!-- Spacing adalah salah satu 
+      utilities yang ada di tailwind. contohnya adalah 
+      1. margin ( jarak area yang ada di luar sekitar element ) 
+      2. padding ( jarak area yang ada didalam sekitar element )
+      dll  -->
+      <div class="mt-6">ini adalah Margin Top 1.5 rem</div>
+      <br>
+      <!-- 
+      Margin
+        kalau misal mau menambah jarak disatu sisi seperti kiri/kanan/atas/bawah doang, maka pakai
+        'm{l/r/t/b}--{size}'. misalnya mt-6 = maka margin top 1.5 rem / 24px. rumusnya adalah
+        m-1 = margin :0.25 rem / 4px
+      -->
+      <!--  1 rem -->
+      <div class="m-4">0. contoh margin dari semua sisi</div>
+      <br>
+      <div class="ml-4">1. contoh margin dari sisi kiri</div>
+      <br>
+      <div class="mr-4">2. contoh margin dari sisi kanan</div>
+      <br>
+      <div class="mt-4">3. contoh margin dari sisi atas</div>
+      <br>
+      <div class="mb-4">4. contoh margin dari sisi bawah</div>
+      <br>
+      <div class="my-4">5. contoh margin vertikal (atas & bawah)<div>
+      <br>
+      <div class="mx-4">6. contoh margin horizontal (kanan & kiri)<div>
+      <br> <br>
+      <div class="w-36 h-16 bg-lime-400 opacity-30 ..."></div>
+      <div class="-mt-8 bg-sky-300 ...">-mt-8 7. contoh margin minus</div>
+  
+    </section>  
+<br>
+  <section>
+    <div dir="ltr">
+      <div class="ms-8 ...">ms-8 contoh logical properties</div>
+      <div class="me-8 ...">me-8 contoh logical properties</div>
+    <div>
+  </section>
+
+  <section>
+    <div class="m-5px">contoh customisasi</div>
+  </section>
+</body>
+</html>

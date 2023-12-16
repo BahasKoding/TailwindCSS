@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          
+        }
+      }
+    }
+  </script> -->
+  <title>Belajar TailwindCSS</title>
+  <style type="text/tailwindcss">
+    * {
+      border: 1px solid red;
+    }
+  </style>
+</head>
+<body> <section name="teori">
+  <h2 class="text-4xl font-bold mb-2">A. Spacing</h2>
+  <h3 class="text-2xl font-semibold">2. Teori Padding</h3>
+    <br>
+    <!-- Spacing adalah salah satu 
+    utilities yang ada di tailwind. contohnya adalah 
+    1. margin ( jarak area yang ada di luar sekitar element ) 
+    2. padding ( jarak area yang ada didalam sekitar element )
+    dll  -->
+    <div class="pt-6">ini adalah Padding Top 1.5 rem</div>
+
+    <div class="p-4">0. contoh Padding dari semua sisi</div>
+    <br>
+    <div class="pl-4">1. contoh Padding dari sisi kiri</div>
+    <br>
+    <div class="pr-4">2. contoh Padding dari sisi kanan</div>
+    <br>
+    <div class="pt-4">3. contoh Padding dari sisi atas</div>
+    <br>
+    <div class="pb-4">4. contoh Padding dari sisi bawah</div>
+    <br>
+    <div class="py-4">5. contoh Padding vertikal (atas & bawah)<div>
+    <br>
+    <!-- <div class="px-4">6. contoh Padding horizontal (kanan & kiri)<div> -->
+    <br>
+    <!-- 
+    Padding
+      kalau misal mau menambah jarak disatu sisi seperti kiri/kanan/atas/bawah doang, maka pakai
+      'm{l/r/t/b}--{size}'. misalnya mt-6 = maka Padding top 1.5 rem / 24px. rumusnya adalah
+      m-1 = Padding :0.25 rem / 4px
+    -->
+
+</body>
+</html>

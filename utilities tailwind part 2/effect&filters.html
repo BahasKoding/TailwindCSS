@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              spacing: {
+                '5px': '5px',
+              },
+              fontFamily: {
+                inter :['Inter'],
+              },
+              colors: {
+                coffe: '#c0ff3e',
+                badas: '#bad455'
+              }
+            }
+          }
+        }
+      </script>
+    <title>Belajar TailwindCSS</title>
+</head>
+<body>
+    <section class="mb-[40px] font-inter max-w-3xl my-14 mx-auto">
+        <h2 class="mb-4 text-6xl font-bold text-center">Belajar Effect & Filters di <br><span class="bg-gradient-to-tr from-blue-500 to-teal-400 bg-clip-text text-transparent">TailwindCSS</span></h2>
+    </section>
+    <!-- Effects -->
+    <div class="mt-32 max-w-xl mx-auto h-96 bg-slate-300 bg-contain bg-no-repeat
+    bg-center rounded-2xl shadow-xl shadow-slate-500 overflow-hidden
+    border-8 "
+         style="background-image: url('https://source.unsplash.com/1000x600?computer');">
+        <div class="w-full h-full bg-blue-300 mix-blend-darken"></div>
+    </div>
+    
+    <div class="mt-32 max-w-xl mx-auto h-96 bg-slate-300 bg-contain bg-no-repeat
+        bg-center rounded-2xl shadow-xl shadow-slate-500 overflow-hidden
+        border-8 bg-blend-multiply"
+        style="background-image: url('https://source.unsplash.com/1000x600?computer');"></div>
+    </div>
+
+    <!-- Filters -->
+    <!-- 1.blur -->
+    <h1 class="text-center mt-32 text-4xl">Contoh Blur Small</h1>
+    <div class="mt-32 max-w-xl mx-auto h-96 bg-slate-300 bg-contain bg-no-repeat
+      bg-center rounded-2xl shadow-xl shadow-slate-500 overflow-hidden
+      border-8 blur-sm"
+      style="background-image: url('https://source.unsplash.com/1000x600?computer');">
+      
+    </div>
+
+
+
+    <div class="mb-96"></div>
+</body>
+</html>

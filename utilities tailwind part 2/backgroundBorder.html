@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              spacing: {
+                '5px': '5px',
+              },
+              fontFamily: {
+                inter :['Inter'],
+              },
+              colors: {
+                coffe: '#c0ff3e',
+                badas: '#bad455'
+              }
+            }
+          }
+        }
+      </script>
+    <title>Belajar TailwindCSS</title>
+</head>
+<body>
+    <section class="mb-[40px] font-inter max-w-3xl my-14 mx-auto">
+        <h2 class="mb-4 text-6xl font-bold text-center">Belajar Background & Border di <br><span class="bg-gradient-to-tr from-blue-500 to-teal-400 bg-clip-text text-transparent">TailwindCSS</span></h2>
+    </section>
+    <h1 class="text-center text-4xl">Contoh BG Scroll</h1>
+    <div class="max-w-xl h-96 my-10 overflow-y-scroll bg-scroll bg-slate-300 mx-auto"
+    style="background-image: url('https://source.unsplash.com/1000x600?computer');">
+        <p class="p-5 text-2xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit possimus minus recusandae quo velit ullam mollitia hic inventore alias, ipsam, quia unde perferendis necessitatibus cum rem consequuntur incidunt repudiandae deserunt ab molestias porro fugit consectetur voluptate non. Doloribus voluptatibus reprehenderit facere maxime dolorem laudantium asperiores amet animi dignissimos quaerat incidunt facilis odio atque itaque, provident beatae fugit qui distinctio. Esse quisquam quidem aut. Neque asperiores consequuntur, ea eos pariatur voluptatum inventore eveniet aut nesciunt doloribus accusamus, tempora quae deleniti reprehenderit cupiditate quia iure hic vel! Esse nostrum accusamus modi quasi alias dolor quaerat ipsum! Maxime ex atque, sapiente natus reprehenderit accusantium nemo nostrum provident esse. Quasi sapiente nisi unde perferendis similique mollitia illum et, consectetur excepturi fuga accusantium adipisci doloremque cupiditate dignissimos debitis recusandae magni. Facere tempore deleniti omnis adipisci asperiores vel quibusdam, similique dignissimos, quisquam labore, nihil eos. Nemo sint ratione maxime accusamus minus odit in minima totam ex aperiam, laudantium sequi nesciunt suscipit accusantium ducimus quae perferendis vel sit modi natus animi molestias ad corrupti! Ullam dolores, delectus obcaecati reiciendis quisquam nulla, natus doloribus perferendis iste repellat, odio minus tenetur ex amet. Mollitia sequi officiis ex a delectus ducimus ipsam aut esse. Eveniet est iure sequi vel! Porro?</p>
+    </div>
+    <h1 class="text-center text-4xl">Contoh BG Local</h1>
+    <div class="max-w-xl h-96 my-10 overflow-y-scroll bg-local bg-slate-300 mx-auto"
+    style="background-image: url('https://source.unsplash.com/1000x600?computer');">
+        <p class="p-5 text-2xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit possimus minus recusandae quo velit ullam mollitia hic inventore alias, ipsam, quia unde perferendis necessitatibus cum rem consequuntur incidunt repudiandae deserunt ab molestias porro fugit consectetur voluptate non. Doloribus voluptatibus reprehenderit facere maxime dolorem laudantium asperiores amet animi dignissimos quaerat incidunt facilis odio atque itaque, provident beatae fugit qui distinctio. Esse quisquam quidem aut. Neque asperiores consequuntur, ea eos pariatur voluptatum inventore eveniet aut nesciunt doloribus accusamus, tempora quae deleniti reprehenderit cupiditate quia iure hic vel! Esse nostrum accusamus modi quasi alias dolor quaerat ipsum! Maxime ex atque, sapiente natus reprehenderit accusantium nemo nostrum provident esse. Quasi sapiente nisi unde perferendis similique mollitia illum et, consectetur excepturi fuga accusantium adipisci doloremque cupiditate dignissimos debitis recusandae magni. Facere tempore deleniti omnis adipisci asperiores vel quibusdam, similique dignissimos, quisquam labore, nihil eos. Nemo sint ratione maxime accusamus minus odit in minima totam ex aperiam, laudantium sequi nesciunt suscipit accusantium ducimus quae perferendis vel sit modi natus animi molestias ad corrupti! Ullam dolores, delectus obcaecati reiciendis quisquam nulla, natus doloribus perferendis iste repellat, odio minus tenetur ex amet. Mollitia sequi officiis ex a delectus ducimus ipsam aut esse. Eveniet est iure sequi vel! Porro?</p>
+    </div>
+    <h1 class="text-center text-4xl">Contoh BG Fixed</h1>
+    <div class="max-w-xl h-96 my-10 overflow-y-scroll bg-fixed bg-slate-300 mx-auto"
+    style="background-image: url('https://source.unsplash.com/1000x600?computer');">
+        <p class="p-5 text-2xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit possimus minus recusandae quo velit ullam mollitia hic inventore alias, ipsam, quia unde perferendis necessitatibus cum rem consequuntur incidunt repudiandae deserunt ab molestias porro fugit consectetur voluptate non. Doloribus voluptatibus reprehenderit facere maxime dolorem laudantium asperiores amet animi dignissimos quaerat incidunt facilis odio atque itaque, provident beatae fugit qui distinctio. Esse quisquam quidem aut. Neque asperiores consequuntur, ea eos pariatur voluptatum inventore eveniet aut nesciunt doloribus accusamus, tempora quae deleniti reprehenderit cupiditate quia iure hic vel! Esse nostrum accusamus modi quasi alias dolor quaerat ipsum! Maxime ex atque, sapiente natus reprehenderit accusantium nemo nostrum provident esse. Quasi sapiente nisi unde perferendis similique mollitia illum et, consectetur excepturi fuga accusantium adipisci doloremque cupiditate dignissimos debitis recusandae magni. Facere tempore deleniti omnis adipisci asperiores vel quibusdam, similique dignissimos, quisquam labore, nihil eos. Nemo sint ratione maxime accusamus minus odit in minima totam ex aperiam, laudantium sequi nesciunt suscipit accusantium ducimus quae perferendis vel sit modi natus animi molestias ad corrupti! Ullam dolores, delectus obcaecati reiciendis quisquam nulla, natus doloribus perferendis iste repellat, odio minus tenetur ex amet. Mollitia sequi officiis ex a delectus ducimus ipsam aut esse. Eveniet est iure sequi vel! Porro?</p>
+    </div>
+    <div class="mx-auto rounded-3xl rounded-tl-3xl h-80  bg-slate-300 max-w-2xl
+         border-slate-700 border-8 shadow-2xl shadow-slate-500">
+    </div>
+
+   
+    <div class="mb-96"></div>
+</body>
+</html>

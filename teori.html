@@ -25,7 +25,7 @@
              ...
         </div>
     -->
-
+    <!-- Utilities TailwindCSS Part 1 -->
     <!-- 1. spacing
         margin bisa minus dan ada (auto), 
         padding gak ada minusnya dan gak ada (auto) 
@@ -52,9 +52,89 @@
         4. colors
         text dan background bisa diberi colors sesuai dengan keinginan, yg menjadi
         pembedanya cuman dari penamaan classnya.
-        
+
+        cara menyatukan colors dengan text dengan cara nge clip backgrounds(dokumentasi)
+
         kita juga bisa memberikan colors gradient sesuai dengan kemauan kita
         dengan mengikuti dokumentasinya
        -->
+
+    <!-- Utilities TailwindCSS Part 2 -->
+    <!-- 1. Background & Border 
+        A. Background
+            ada beberapa tipe background di dokumentasinya, yg dibahas adalah
+            a. background attachment
+                ada 3 tipe, yaitu fixed, local dan scroll untuk gambar
+                1. Use bg-fixed to fix the background image relative to the viewport.
+                2. Use bg-local to scroll the background image with the container and the viewport.
+                3. Use bg-scroll to scroll the background image with the viewport, but not with the container.
+            b. background size
+                ada 3 tipe, yaitu Auto, Cover dan Contain
+                1. Use bg-auto to display the background image at its default size.
+                2. Use bg-cover to scale the background image until it fills the background layer.
+                3. Use bg-contain to scale the background image to the outer edges without cropping or stretching.
+                (khusus bg-contain, kalau gak mau ada 'repeat' baca dokumentasi bagian background - repeat)
+            c. background repeat
+                untuk menghilangkan repeat gambar atau background
+            d. background position
+                untuk setting posisi si gambar atau backgroundnya, sama seperti margin, padding dll
+        B. Borders
+            ada beberapa tipe border di dokumentasinya, yg dibahas adalah
+            a. border radius (2. Rounding)
+                tiap2 ujung elementnya akan tumpul. kalau mau di beberapa bagian doang yg tumpul
+                bisa menggunakan 
+                1. Rounded corners = Use utilities like "rounded-sm", "rounded", or "rounded-lg" to apply different border radius sizes to an element.
+                2. Pill buttons = Use the "rounded-full" utility to create pill buttons.
+                3. No rounding = Use "rounded-none" to remove an existing border radius from an element.
+                4. Rounding sides separately = Use "rounded-{t|r|b|l}{-size?}" to only round one side of an element.
+                5. Rounding corners separately = Use "rounded-{tl|tr|br|bl}{-size?}" to only round one corner an element.
+                6. Using logical properties = Use the "rounded-{s|e|ss|se|es|ee}{-size?}" utilities to set the border radius using logical properties, 
+                                                which map to the appropriate corners based on the text direction
+
+                bisa juga diatur ukuran ketumpulan dari elemetsnya
+            b. border width
+                ketebalan si bordernya yang bisa diatur juga ketebalannya.
+            c. border color
+                memberikan warna di sekitar bordernya(dengan catatan sudah ada width, biar keliatan)
+            d. border style
+                untuk memberikan style di bordernya, bisa liat di dokumentasinya untuk contohnya
+            e. divide width, color & style
+                masi belum jelas
+            f. outline dan ring (nanti aja di skip)
+        
+    -->
+       
+
+    <!-- 2. Rounding & Shadow 
+        A. Rounding sudah dibahas dibagian borders
+        B. Shadow (3. Effect)
+            1. sizing shadow
+                ada ukuran shadow yang bisa di sesuaikan dengan mengikuti dokumentasinya, di bagian Effects
+            2. coloring shadow
+                kasi shadow terlebih dahulu dengan sizing, lalu nnti bisa dimunculkan colors seperti sebelumnya
+    -->
+        
+    <!-- 3. Effect & Filters 
+        1. shadow (effect)
+        2. opacity (effect)
+            transparasi, normalnya adalah 100.
+        3. mix blend mode (effect)
+            blending element didepan background, (biasanya anak photoshop ngerti masalah blending)
+            tinggal baca2 lgi dokumentasi mengenai blending
+        4. background blend mode (effect)
+            Utilities for controlling how an element's background image should blend with its background color.
+            (kurang ngerti gw)
+            menggabungkan background image dan background color katanya
+        5. blur (filters)
+            membuat effect blur di sebuah element, ada ukurannya juga. bisa dibaca di dokumentasinya
+        6. brightness(filters)
+            membuat effect kecerahan di sebuah element, ada ukurannya juga. bisa dibaca di dokumentasinya
+        7. backdrop blur
+            untuk membuat effect glassmorphism
+        dan masi banyak lagi untuk effect dan filters di dokumentasinya
+        
+    -->
+
+
 </body>
 </html>
